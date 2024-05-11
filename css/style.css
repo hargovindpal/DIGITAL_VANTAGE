@@ -9,6 +9,13 @@ body{
     --dark: #091E3E;
 }
 /** Whatsapp QR Code **/
+
+.mainlogo{
+    height:100px; 
+    width: 450px;
+
+}
+
 .scan-qr{
     display: flex;
     position: fixed;
@@ -18,6 +25,7 @@ body{
     z-index:999;
 
 }
+
 .scan-qr:hover::after {
 
     content: attr(title); 
@@ -49,6 +57,26 @@ body{
     height: 150px;
     width: 300px;
 }
+@media screen and (max-width:767px)
+{
+    .mainlogo{
+        height:100px; 
+        width: 250px;
+        margin:0px !important;
+    
+    }
+
+    .scan-qr img{
+        height: 80px;
+        width: 50px;
+        margin-right:0px;
+    }
+    .ftrlogo{
+        width:250px;
+    }
+    
+}
+
 
 /*** Spinner ***/
 .spinner {
